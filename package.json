@@ -1,0 +1,42 @@
+{
+  "name": "task-manager-rbac",
+  "version": "1.0.0",
+  "description": "Task Manager with Role-Based Access Control - MERN Stack Application",
+  "main": "index.js",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview",
+    "build:frontend": "cd frontend && npm run build",
+    "setup": "npm run install:all && echo \"Setup complete! Update .env files and start MongoDB before running dev command.\""
+  },
+  "keywords": [
+    "task-manager",
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "jwt",
+    "rbac",
+    "authentication",
+    "authorization"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/task-manager-rbac.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
